@@ -19,4 +19,13 @@
     <Folder Include="DATA\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="DATA\LoginDB.ldf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="DATA\LoginDB.mdf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
