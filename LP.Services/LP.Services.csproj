@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LP.Context\LP.DAO.csproj" />
+    <ProjectReference Include="..\LP.Domain\LP.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

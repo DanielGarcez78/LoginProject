@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Login Project | Login
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="usuario">Usuário</label>
+                <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Usuário" autofocus>
+            </div>
+            <div class="form-group">
+                <label for="Senha">Senha</label>
+                <input type="password" class="form-control" id="Senha" name="Senha" placeholder="Senha" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    @if (ViewBag.LoginOk != null)
+    {
+        @if (ViewBag.LoginOk)
+        {
+            <div class="alert alert-success mt-2" role="alert">
+                Acesso Garantido
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger mt-2" role="alert">
+                Acesso Negado
+            </div>
+        }
+    }
+</div>
+}
+
